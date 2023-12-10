@@ -1,31 +1,35 @@
-# `component-name`
+# `random-source`
 
-A Web Component for…
+A Web Component to randomly change audio or video sources.
 
-**[Demo](https://daviddarnes.github.io/component-name/demo.html)** | **[Example resource](https://darn.es/blog-post)**
+**[Demo](https://daviddarnes.github.io/random-source/demo.html)**
 
 ## Examples
 
 ```html
-<script type="module" src="component-name.js"></script>
+<script type="module" src="random-source.js"></script>
 
-<component-name>
-  <!-- slotted content -->
-</component-name>
+<random-source>
+  <audio controls>
+    <source src="https://darn.es/sounds/daviddarnes.m4a" />
+    <source src="https://darn.es/sounds/daviddarnes2.m4a" />
+  </audio>
+</random-source>
 ```
 
 ## Features
 
 This Web Component allows you to:
 
-- Check for…
+- Randomly change the source of an `audio` or `video` element once the source has ended
+- Trust that the first `source` element will always be used on load, to match default behaviour
 
 ## Installation
 
 You have a few options (choose one of these):
 
-1. Install via [npm](https://www.npmjs.com/package/@daviddarnes/component-name): `npm install @daviddarnes/component-name`
-1. [Download the source manually from GitHub](https://github.com/daviddarnes/component-name/releases) into your project.
+1. Install via [npm](https://www.npmjs.com/package/@daviddarnes/random-source): `npm install @daviddarnes/random-source`
+1. [Download the source manually from GitHub](https://github.com/daviddarnes/random-source/releases) into your project.
 1. Skip this step and use the script directly via a 3rd party CDN (not recommended for production use)
 
 ### Usage
@@ -34,17 +38,17 @@ Make sure you include the `<script>` in your project (choose one of these):
 
 ```html
 <!-- Host yourself -->
-<script type="module" src="component-name.js"></script>
+<script type="module" src="random-source.js"></script>
 ```
 
 ```html
 <!-- 3rd party CDN, not recommended for production use -->
-<script type="module" src="https://www.unpkg.com/@daviddarnes/component-name@1.0.0/component-name.js"></script>
+<script type="module" src="https://www.unpkg.com/@daviddarnes/random-source@1.0.0/random-source.js"></script>
 ```
 
 ```html
 <!-- 3rd party CDN, not recommended for production use -->
-<script type="module" src="https://esm.sh/@daviddarnes/component-name@1.0.0"></script>
+<script type="module" src="https://esm.sh/@daviddarnes/random-source@1.0.0"></script>
 ```
 
 ## Credit
