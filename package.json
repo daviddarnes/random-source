@@ -1,7 +1,7 @@
 {
   "name": "@daviddarnes/random-source",
   "version": "1.0.0",
-  "description": "A Web Component to randomly cycle through audio or video sources",
+  "description": "A Web Component to randomly change audio or video sources",
   "main": "random-source.js",
   "scripts": {
     "start": "npx http-server ."
