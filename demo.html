@@ -3,14 +3,19 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Demo of component-name Web Component" />
-		<title>component-name Web Component Demo</title>
+		<meta name="description" content="Demo of random-source Web Component" />
+		<title>random-source Web Component Demo</title>
 
-		<script type="module" src="component-name.js"></script>
+		<script type="module" src="random-source.js"></script>
 	</head>
 	<body>
-    		<component-name>
-			<!-- slotted content -->
-		</component-name>
+    		<random-source>
+			<audio controls>
+				<source src="https://darn.es/sounds/daviddarnes.m4a" />
+				<source src="https://darn.es/sounds/daviddarnes2.m4a" />
+				<source src="https://darn.es/sounds/daviddarnes3.m4a" />
+				<source src="https://darn.es/sounds/daviddarnes4.m4a" />
+			</audio>
+		</random-source>
 	</body>
 </html>
