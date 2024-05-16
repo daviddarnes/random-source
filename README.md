@@ -2,7 +2,7 @@
 
 A Web Component to randomly change audio or video sources.
 
-**[Demo](https://daviddarnes.github.io/random-source/demo.html)**
+**[Demo](https://daviddarnes.github.io/random-source/demo.html)** | **[Further reading](https://darn.es/random-source-web-component/)**
 
 ## Examples
 
