@@ -6,22 +6,24 @@ class RandomSource extends HTMLElement {
   }
 
   connectedCallback() {
-    this.players.forEach((player) => {
-      player.addEventListener("ended", (event) => this.changeSource(player));
-    });
+    if (this.sources.length > 1) {
+      this.player.addEventListener("ended", (event) => this.changeSource());
+    }
   }
 
-  changeSource(player) {
-    const sources = this.sources(player);
-    player.src = sources[Math.floor(Math.random() * (sources.length))].src;
+  changeSource() {
+    const pool = [...this.sources].filter(
+      (source) => source.src != this.player.src
+    );
+    this.player.src = pool[Math.floor(Math.random() * pool.length)].src;
   }
 
-  sources(parent) {
-    return parent.querySelectorAll("source:not([media],[type],[srcset])");
+  get sources() {
+    return this.querySelectorAll("source:not([media],[type],[srcset])");
   }
 
-  get players() {
-    return this.querySelectorAll("audio, video");
+  get player() {
+    return this.querySelector("audio, video");
   }
 }
 
