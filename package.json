@@ -1,6 +1,6 @@
 {
   "name": "@daviddarnes/random-source",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Web Component to randomly change audio or video sources",
   "main": "random-source.js",
   "scripts": {

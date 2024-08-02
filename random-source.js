@@ -13,7 +13,7 @@ class RandomSource extends HTMLElement {
 
   changeSource() {
     const pool = [...this.sources].filter(
-      (source) => source.src != this.player.src
+      (source) => source.src != this.player.currentSrc
     );
     this.player.src = pool[Math.floor(Math.random() * pool.length)].src;
   }

@@ -43,12 +43,18 @@ Make sure you include the `<script>` in your project (choose one of these):
 
 ```html
 <!-- 3rd party CDN, not recommended for production use -->
-<script type="module" src="https://www.unpkg.com/@daviddarnes/random-source@1.1.0/random-source.js"></script>
+<script
+  type="module"
+  src="https://www.unpkg.com/@daviddarnes/random-source@1.1.1/random-source.js"
+></script>
 ```
 
 ```html
 <!-- 3rd party CDN, not recommended for production use -->
-<script type="module" src="https://esm.sh/@daviddarnes/random-source@1.1.0"></script>
+<script
+  type="module"
+  src="https://esm.sh/@daviddarnes/random-source@1.1.1"
+></script>
 ```
 
 ## Credit
